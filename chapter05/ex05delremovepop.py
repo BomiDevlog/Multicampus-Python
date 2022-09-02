@@ -3,6 +3,8 @@
 # del명령어: del numbers[2] 3번째 element삭제. index기반
 # remove()메서드: numbers.remove(30) 30이라는 데이터 삭제. 데이터 기반. 해당 데이터 없으면 예외 발생
 # pop() 메서드: 삭제하고 해당 값을 반환. xxx= numbers.pop(3)
+# 리턴값이 존재하여 삭제하는 값을 반환한다. 
+# pop() 매개변수안넣으면 디폴트가 -1이라서 마지막요소를 삭제하고 반환.
 
 from tkinter import N
 
