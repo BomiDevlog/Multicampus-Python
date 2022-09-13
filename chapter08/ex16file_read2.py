@@ -3,10 +3,18 @@
 파일의 내용을 라인 번호와 함께
 출력하는 기능을 파일 입출력을 통해서 구현하기
 '''
+# 존재여부를 확인하는 작업 추가
+import os
+import sys
 
 fname = input('입력할 파일의 이름 : ') # 파일 열기
+if not os.path.exists(fname):
+  print(fname, '이 존재하지 않습니다.')
+  sys.exit(0)
+  # 파일이 존재하지 않는다면 더이상 진행하지 않고, 프로그램종료
 
 f = open(fname, 'r')
+
 n = 1                   # 줄 번호를 출력하기 위한 변수
 l = f.readline()
 while l:                # 읽을 줄이 있으면 반복 수행
